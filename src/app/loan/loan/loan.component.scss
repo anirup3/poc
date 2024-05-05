@@ -3,3 +3,11 @@
   display: flex;
   gap: 24px;
 }
+
+::ng-deep .p-dropdown-panel .p-dropdown-items {
+  padding: 0rem;
+}
+
+::ng-deep .p-dropdown {
+  left: 14px;
+}
