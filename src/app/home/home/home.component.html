@@ -40,7 +40,7 @@
   </div>
   @if (isQ2visible) {
   <div class="row-pt-4" style="background-color:rgb(163, 201, 225);" >How long have you been customer?</div>
-  <input class="form-control" type="number" min="0" id="validationCustom01" placeholder="Years" (keyup.enter)="navigate()"
+  <input class="form-control" type="number" min="0" id="validationCustom01" [(ngModel)]="years" placeholder="Years" (keyup.enter)="navigate()"
   (keypress)="keypressalert($event)" required>
     @if (showMsg) {
     <div class="alert alert-primary" role="alert" style="margin-top: 30px;">

@@ -39,16 +39,20 @@ export class HomeComponent {
   }
 
   navigate(){
-    if(this.years!=null && this.years.toLowerCase() !='enter')
+    if(this.years!=null)
       this.router.navigate(['/loan']);
   }
 
   keypressalert(e:any){
     console.log(e.key.length);
     console.log(e.target.value.length);
-    if(!e.target.value.length || !e.key.length){
+    // if(!e.target.value.length || !e.key.length){
+    //   this.showMsg=true;
+    //   this.years=e.target.value?e.target.value:e.key;
+    // }
+    if(this.years!=null || e.key.length){
       this.showMsg=true;
-      this.years=e.target.value?e.target.value:e.key;
+      //this.years=e.target.value?e.target.value:e.key;
     }
   }
 }
